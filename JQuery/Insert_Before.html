@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="J_Query_3.3.6.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("<span>Hello world!</span>").insertBefore("p");
+  });
+});
+</script>
+</head>
+<body>
+
+<button>Insert span element before each p element</button>
+
+<br><br>
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+</body>
+</html>
+
+=============================================================================================================
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>insertBefore demo</title>
+  <style>
+  #foo {
+    background: yellow;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+</head>
+<body>
+ 
+<div id="foo">FOO!</div>
+<p>I would like to say: </p>
+ 
+<script>
+$( "p" ).insertBefore( "#foo" );
+</script>
+ 
+</body>
+</html>

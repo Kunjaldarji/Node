@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="J_Query_3.3.6.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("<span>Hello world!</span>").insertAfter("p");
+  });
+});
+</script>
+</head>
+<body>
+
+<button>Insert span element after each p element</button>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+</body>
+</html>
+
+===================================================================================================================
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>insertAfter demo</title>
+  <style>
+  #foo {
+    background: yellow;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+</head>
+<body>
+ 
+<p> is what I said... </p>
+<div id="foo">FOO!</div>
+ 
+<script>
+$( "p" ).insertAfter( "#foo" );
+</script>
+ 
+</body>
+</html>

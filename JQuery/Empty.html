@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="J_Query_3.3.6.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").empty();
+  });
+});
+</script>
+</head>
+<body>
+
+<div style="height:100px;background-color:yellow">
+  This is some text
+  <p>This is a paragraph inside the div.</p>
+</div>
+
+<p>This is a paragraph outside the div.</p>
+
+<button>Remove content of the div element</button>
+
+</body>
+</html>
+
+=======================================================================================================================
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>empty demo</title>
+  <style>
+  p {
+    background: yellow;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+</head>
+<body>
+ 
+<p>
+  Hello, <span>Person</span> <em>and person</em>.
+</p>
+ 
+<button>Call empty() on above paragraph</button>
+ 
+<script>
+$( "button" ).click(function() {
+  $( "p" ).empty();
+});
+</script>
+ 
+</body>
+</html>

@@ -1,0 +1,135 @@
+
+// Key highlights on SQL vs NoSQL: 
+
+//                    SQL	                                                                 NoSQL
+
+// RELATIONAL DATABASE MANAGEMENT SYSTEM (RDBMS)	                        Non-relational or distributed database system.
+// These databases have fixed or static or predefined schema	            They have dynamic schema
+// These databases are not suited for hierarchical data storage.	        These databases are best suited for hierarchical data storage.
+// These databases are best suited for complex queries	                    These databases are not so good for complex queries
+// Vertically Scalable	                                                    Horizontally scalable
+// Follows ACID property	                                                Follows CAP(consistency, availability, partition tolerance)
+// Examples: MySQL, PostgreSQL, Oracle, MS-SQL Server, etc	                Examples: MongoDB, GraphQL, HBase, Neo4j, Cassandra, etc  
+
+// db.collection.findOne()->to get one document
+
+
+// ================ in mongo shell terminal ================
+
+// mongosh
+
+// show dbs
+
+// use newskill // database creation
+
+// newskill > show collections
+
+// newskill > db.createCollection("stud")
+ 
+// newskill > db.stud.find()
+
+
+// ========================= insert documrnt ========================
+
+// db.collections.insertOne() 
+// db.collections.insertMany()
+// db.collections.insert()
+
+//  ==================== for show data collection =================
+ 
+// db.stude.find() //stude is collection of database
+// db.collection.findOne()->to get one document
+
+
+db.stud.insertMany([
+{sno:111,sname:"Ram",number: 9879879879,fees:37500,course:"Node"},
+{sno:112,sname:"Raj",number:9987424364,fees:45000,course:"FullStack"},
+{sno:113,sname:"abc",number:9953432364,fees:65000,course:"Django"},
+{sno:114,sname:"dca",number:9984517364,fees:45000,course:"Node"},
+{sno:115,sname:"cer",number:9987987334,fees:65000,course:"Flutter"},
+{sno:116,sname:"dtf",number:9987987334,fees:25000,course:"Python"},
+{sno:117,sname:"shital",number:9854789532,fees:45000,course:"Node"},
+{sno:118,sname:"Divya",number:9854789932,fees:55000,course:"Uv"},
+{sno:119,sname:"Ayushi",number:9854784532,fees:40000,course:"Python"},
+{sno:120,sname:"Gudi",number:9854789562,fees:37000,course:"Django"} ])
+
+
+db.stud.insertOne({sno:111,sname:"Ram",number: 9879879879,fees:37500,course:"Node"})
+db.stud.insertOne({sno:112,sname:"Raj",number:9987424364,fees:45000,course:"FullStack"})
+db.stud.insertOne({sno:113,sname:"abc",number:9953432364,fees:65000,course:"Django"})
+db.stud.insertOne({sno:114,sname:"dca",number:9984517364,fees:45000,course:"Node"})
+db.stud.insertOne({sno:115,sname:"cer",number:9987987334,fees:65000,course:"Flutter"})
+db.stud.insertOne({sno:116,sname:"dtf",number:9987987334,fees:25000,course:"Python"})
+db.stud.insertOne({sno:117,sname:"shital",number:9854789532,fees:45000,course:"Node"})
+db.stud.insertOne({sno:118,sname:"Divya",number:9854789932,fees:55000,course:"Uv"})
+db.stud.insertOne({sno:119,sname:"Ayushi",number:9854784532,fees:40000,course:"Python"})
+db.stud.insertOne({sno:120,sname:"Gudi",number:9854789562,fees:37000,course:"Django"}) 
+
+db.test.find({}).skip(3)
+db.test.find({}).sort({"name":-1})
+db.test.find({}).sort({"name" :1})
+
+
+db.collection.drop()
+db.students.drop()
+db.dropDatabase()
+
+
+
+// mongosh "mongodb+srv://cluster0.ogcsfrt.mongodb.net/myFirstDatabase" --apiVersion 1 --username Kunjalsuthar
+
+
+
+
+
+
+
+// Difference between URL and URI
+// URL	                                                                                            URI
+// Describe the identity of a device	                                                Technique to identify the item
+// Protocols used to access links to a webpage, a component or a program on a webpage	Regardless of the method utilised, helps to identify one resource from the other
+// About the type of protocols to be used	                                            No protocol is specified
+// Is a type of URI	                                                                    URI is the superset of URL
+// Access the location or address of the resource	                                    Find the resource
+// Its components are protocol, domain, path, hash, query string and so on	            Components included are scheme, authority, path, query and more
+// Example- https://google.in	                                                        Example-:urn:isbn:0-284-56889-3
+
+
+
+
+
+HTTP
+// Hypertext Transfer Protocol (HTTP) is an application-layer protocol for transmitting hypermedia documents, such as HTML. It was designed for communication between web browsers and web servers, but it can also be used for other purposes. HTTP follows a classical client-server model, with a client opening a connection to make a request, then waiting until it receives a response. 
+// HTTP is a stateless protocol, meaning that the server does not keep any data (state) between two requests.
+
+
+
+// Difference between HTTP and HTTPs :
+
+// S.No.	HTTP	HTTPS
+// 1.	HTTP stands for HyperText Transfer Protocol.	                HTTPS for HyperText Transfer Protocol Secure.
+// 2.	In HTTP, URL begins with “http://”.	                            In HTTPs, URL starts with “https://”.
+// 3.	HTTP uses port number 80 for communication.	                    HTTPs uses 443 port number for communication.
+// 4.	HTTP is considered to be unsecure.	                            HTTPs is considered as secure.
+// 5.	HTTP works at Application Layer.	                            HTTPS works at Transport Layer.
+// 6.	In HTTP, Encryption is absent.	                                Encryption is present in HTTPS.
+// 7.	HTTP does not require any certificates.                     	HTTPS needs SSL Certificates.
+// 8.	HTTP does not improve search ranking	                        HTTPS helps to improve search ranking
+// 9.	HTTP faster than HTTPS	                                        HTTPS slower than HTTP
+// 10.	HTTP does not use data hashtags to secure data.             	While HTTPS will have the data before sending it and return it to its original state on the receiver side.
+
+// Factors
+
+// REST API
+
+// RESTful API
+
+// Define	Develops APIs to enable client-server interaction.	                                                        Web application follows REST architecture, providing interoperability between different systems.
+// Working	Uses web services and is based on request and response.    	                                                Working is completely based on REST applications.
+// Nature	Highly adaptable and user-friendly	                                                                        Too flexible
+// Protocol	Strong protocol and is more secure, built-in architecture layers.	                                    Has a transport protocol, is less secure as compared to REST.
+// Architecture	Has a cacheable, client-server, stateless, layer system with a uniform interface.	                All features of REST architecture along with some additional unique features.
+// Format of Data	Format of data is based on HTTP.	                                                                Format of data is based on HTTP, text, and JSON.
+// Bandwidth	This consumes minimum bandwidth.	                                                                    This consumes less bandwidth.
+// Cache	It represents cacheable and non-cacheable data and displaces the non-cacheable data when not required.	    The client can access cacheable information anytime and anywhere.
+// Related Articles

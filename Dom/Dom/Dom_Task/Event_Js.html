@@ -1,0 +1,152 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label for="text1"> A : </label>
+    <input type="text1" id="text1" placeholder="text1"> <br>
+
+    <label for="text2"> B : </label>
+    <input type="text2" id="text2" placeholder="text2"> <br>
+
+    <button id="MyBtn" onclick="myFunction()">Add</button>
+
+    <label for="text3"> C : </label>
+    <input type="text3" id="text3" placeholder="text3"> <br>
+
+    <script>
+        function myFunction() {
+            let text1 = parseInt(document.getElementById("text1").value)
+            let text2 = parseInt(document.getElementById("text2").value)
+
+            // console.log(`${text1} + ${text2}`)
+            // console.log(`${text1 + text1}`)
+            C = A+B;
+            document.getElementById("taxt3").value = C;
+            taxt3.value=C;
+            // console.log(typeof (text1))
+            // console.log(typeof (text2))
+        }
+    </script>
+</body>
+</html> -->
+
+<!-- ===================================================================================================================== -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sum</title>
+</head>
+
+<body>
+
+    <label for="text1"> A : </label>
+    <input type="text" id="text1" name="num1">
+
+    <label for="text2"> B : </label>
+    <input type="text" id="text2" name="num2">
+
+    <button id="addbtn" onclick="add()">add</button>
+
+    <label for="text3"> Ans:</label>
+    <input type="text" id="text3" name="num3">
+    
+    <script>
+        document.getElementById("addbtn").addEventListener("click", add);
+
+        function add() {
+            let a = parseInt(document.getElementById("text1").value);
+            let b = parseInt(document.getElementById("text2").value);
+
+            let c = a + b;
+
+            document.getElementById("text3").innerHTML = c;
+
+            text3.value = c;
+            alert(c);
+
+            console.log("text1")
+            console.log("text2")
+
+            console.log(`${a}-${b}`);
+            console.log(`${a + b}`);
+        } 
+    </script>
+</body>
+
+</html> -->
+
+<!-- ========================================================================================================================== -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <lable for="text1">a</lable>
+    <input type="text" id="text1" name="text1"><br></br>
+
+    <lable for="text2">b</lable>
+    <input type="text" id="text2" name="text2"><br></br>
+
+    <lable for="sumtext"> add ans:</lable>
+    <input type="text" id="sumtext" name=" add ans"><br></br>
+
+    <lable for="subtext"> sub ans:</lable>
+    <input type="text" id="subtext" name="sub ans"><br></br>
+
+    <lable for="multitext"> multi ans:</lable>
+    <input type="text" id="multitext" name=" multi ans"><br></br>
+
+    <lable for="divitext"> divi ans:</lable>
+    <input type="text" id="divitext" name=" divi ans"><br></br>
+
+    <button id="add Btn" onclick="myfunctionadd()">Add</button>
+
+    <script>
+        document.getElementById("my Btn").addEventListener("click", myfunctionadd);
+
+        function myfunctionadd() {
+            let a = parseInt(document.getElementById("text1").value);
+            let b = parseInt(document.getElementById("text2").value);
+
+            console.log(`${a}-${b}`);
+            console.log(`${a - b}`);
+            console.log(`${a}+${b}`);
+            console.log(typeof (a));
+            // let cadd = a+b;
+            // let csub = a-b;
+            // let cmulti = a*b;
+            // let cdiv = a/b;
+            // document.getElementById("sumtext").innerHTML=cadd;
+            // document.getElementById("subtext").innerHTML=csub;
+            // document.getElementById("multitext").innerHTML=cmulti;
+            // document.getElementById("divitext").innerHTML=cdiv;
+            // sumtext.value=cadd;
+            // subtext.value=csub;
+            // multitext.value=cmulti;
+            // divitext.value=cdiv;
+
+        }
+    </script>
+</body>
+</html>

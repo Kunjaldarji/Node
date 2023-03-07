@@ -1,0 +1,302 @@
+<!-- <!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <title>Bootstrap Example</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example">
+
+  <div class="row">
+    <div class="col">
+      <label for="text1" class="form-label">FirstName : </label>
+      <input type="text" id="taxt1" class="form-control" placeholder="First name" aria-label="First name">
+    </div>
+    <div class="col">
+      <label for="taxt2" class="form-label">LastName : </label>
+      <input type="text" id="text2" class="form-control" placeholder="Last name" aria-label="Last name">
+    </div>
+  </div>
+  <form class="row g-3">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" id="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Password</label>
+      <input type="password" id="pass" class="form-control" id="inputPassword4">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Number : </label>
+      <input type="number" id="num" class="form-control" id="inputnumber" placeholder="1234">
+    </div>
+    <p>Please select your Gender :</p>
+    <input type="radio" id="gender1" name="Female" value="30">
+    <label for="age1">Male</label><br>
+    <input type="radio" id="gender2" name="Male" value="60">
+    <label for="age2">Female</label><br>
+
+    <input type="submit" value="Submit">
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Address</label>
+      <input type="text" id="addr" class="form-control" id="inputAddress" placeholder="1234 Main St">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress2" class="form-label">Address 2</label>
+      <input type="text" id="addr2" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">City</label>
+      <input type="text" id="city" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">Course : </label>
+      <select id="inputCourse" class="form-select">
+        <option selected>Choose...</option>
+        <option>Node js</option>
+        <option>React js</option>
+        <option>Vue js</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label">Zip</label>
+      <input type="text" id="zi" class="form-control" id="inputZip">
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Check me out
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary">Sign in</button>
+      <button id="addbtn" onclick="add()">add</button>
+    </div>
+  </form>
+  <script>
+
+    document.getElementById("addbtn").addEventListener("click", add);
+
+    function add() {
+      console.log(FirstName = parseInt(document.getElementById("taxt1").value));
+      console.log(lastname = parseInt(document.getElementById("taxt2").value));
+      console.log(Email = parseInt(document.getElementById("email").value));
+      console.log(Password = parseInt(document.getElementById("pass").value));
+      console.log(Number = parseInt(document.getElementById("num").value));
+      console.log(Address = parseInt(document.getElementById("addr").value));
+      console.log(Address2 = parseInt(document.getElementById("addr2").value));
+
+    }
+  </script>
+</body>
+
+</html> -->
+
+
+
+<!-- =================================================================================================================== -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORM 1</title>
+</head>
+
+<body>
+  <form>
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname" placeholder="First Name"><br><br>
+
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" placeholder="Last Name"><br><br>
+
+    <label for="email">Email :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="email" id="email" placeholder="Email"><br><br>
+
+
+    <label for="password">Password : </label>
+    <input type="password" id="Password" placeholder="Password" required><br><br>
+
+
+    <label>Gender :</label>&nbsp;&nbsp;&nbsp;&nbsp;
+    <lable>Male</lable>
+    <input type="radio" id="male" name="Gender" value="Male" required>
+
+
+    <lable>Female</lable>
+    <input type="radio" id="female" name="Gender" value="Female" required><br><br>
+
+
+    <address>
+      <label for="Address">Address : </label>&nbsp;
+      <input type="text" id="Address" placeholder="address"><br><br>
+    </address>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button id="btn">submit</button>
+  </form>
+
+
+  <script>
+    document.getElementById("btn").addEventListener("click", submit);
+
+    function submit() {
+      console.log("Firstname:", document.getElementById("firstname").value);
+      console.log("Lastname:", document.getElementById("lastname").value);
+      console.log("Email :", document.getElementById("email").value);
+      console.log("Password :", document.getElementById("Password").value);
+      let m = ("Gender", document.getElementById("male").checked);
+      let f = ("Gender", document.getElementById("female").checked)
+
+
+      if (m == true) {
+        console.log("Gender", document.getElementById("male").value);
+      }
+      else {
+        console.log("Gender", document.getElementById("female").value);
+      }
+      console.log("Address", document.getElementById("Address").value);
+    }
+  </script>
+</body>
+
+</html> -->
+
+
+<!-- ================================================================================================================= -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <div class="text-bg-dark">
+    <center>
+      <!-- <img src="photo.png" alt="Italian Trulli" width="200" height="100"> -->
+      <style>
+        table,
+        th,
+        td {
+          border: 1px solid hsl(250, 555%, 35%);
+        }
+      </style>
+      <script type="text/javascript">
+        function fisrt_n() {
+          var first_name = document.getElementById("fist_name").value;
+          var last_name = document.getElementById("last_name").value;
+          var e_mail = document.getElementById("e_mail").value;
+          //  console.log(${first_name});
+
+          //  console.log(${last_name});
+          document.writeln("Name: " + first_name, "<br>", last_name, "<br>", e_mail);
+
+        }
+      </script>
+</head>
+
+<body>
+  <h2 style="background-color: rgb(228, 27, 30);"> Registration Form</h2>
+  <h3>
+    <p style="background-color: rgb(56, 25, 254);"> Skill Qode</p>
+  </h3>
+  <form onsubmit="fisrt_n()">
+    <table style="width: 40%" background-color: rgb(248,134,4);>
+      <tr>
+        <th>
+          <div class="alert alert-primary" role="alert">First Name</div>
+        </th>
+        <td><input type="text" id="fist_name"></td>
+      </tr>
+      <tr>
+        <Th>
+          <div class="alert alert-success" role="alert">Last Name</div>
+        </Th>
+        <td><input type="text" id="last_name"></td>
+      </tr>
+      <tr>
+        <th>
+          <div class="alert alert-danger" role="alert">E-Mail</div>
+        </th>
+        <td><input type="text" id="e_mail"></td>
+      </tr>
+      <tr>
+        <Th>
+          <div class="alert alert-warning" role="alert">Gender</div>
+          </td>
+        <td><input type="radio" name="gender" value="male"> Male <input type="radio" name="gender" value="female">
+          Female<input type="radio" name="gender" value="Other">Other</td>
+      </tr>
+      <tr>
+        <th>
+          </div>
+          <div class="alert alert-info" role="alert">Password</div>
+        </th>
+        <td> <input type="password">
+      </tr>
+      <tr>
+        <th>
+          <div class="alert alert-warning" role="alert">Language</div>
+        </th>
+        <td><select id="language">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JAVA">JAVA</option>
+            <option value="Dart">Dart</option>
+          </select></td>
+      </tr>
+      <th>
+        <div class="alert alert-warning" role="alert">Country</div>
+      </th>
+      <td><select id="language">
+          <option value="HTML">India</option>
+          <option value="CSS">Canada</option>
+          <option value="JAVA">Australia</option>
+          <option value="Dart">USA</option>
+        </select></td>
+      </tr>
+      <th>
+        <div class="alert alert-info" role="alert">DOB</div>
+      </th>
+      <td><input type="date"></td>
+      <tr>
+        <Th>
+          <div class="alert alert-primary" role="alert">Time</div>
+          </td>
+        <td><input type="time"></td>
+      </tr>
+      <tr>
+        <th>
+          <div class="alert alert-warning" role="alert">Salary</div>
+        </th>
+        <td><input type="range"></td>
+      </tr>
+      <tr>
+        <Th>
+          <div class="alert alert-dark" role="alert">upload Image</div>
+          </td>
+        <td>
+          <p>Click on the "Choose File" button to upload a file:</p>
+          <input type="file" id="myFile" name="filename"><br><br>
+  </form>
+  </td>
+  </tr>
+  </table><input class="btn btn-primary" type="submit" value="Submit"><input class="btn btn-primary" type="Reset"
+    value="Reset">
+  <p style="background-color: rgb(25, 116, 14);">-----The End-----</p>
+  </center>
+  </div>
+</body>
+
+</html>
